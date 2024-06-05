@@ -31,7 +31,7 @@ jobs:
     - uses: actions/checkout@v3
     - uses: ./
       with:
-        host: 'mozilla-old.badssl.com'
+        host: 'rc4-md5.badssl.com'
         grade: 'A'
     - uses: actions/upload-artifact@v3
       if: always()
