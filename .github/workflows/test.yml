@@ -32,7 +32,7 @@ jobs:
     - uses: ./
       with:
         host: 'mozilla-old.badssl.com'
-        grade: 'B'
+        grade: 'A'
     - uses: actions/upload-artifact@v3
       if: always()
       with:
