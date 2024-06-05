@@ -27,8 +27,8 @@ async function run() {
       let execOptions = {
         ignoreReturnCode: true
       };
-      let [exitCode, ..._] = await exec.getExecOutput(command, [], execOptions);
-      console.log('Exit code: ' + exitCode);
+      let [exitCode,] = await exec.getExecOutput(command, [], execOptions);
+      core.info('Exit code: ' + exitCode);
 
       let path = workspace + '/' + output;
       let reportFile = fs.readdirSync(path).filter(fn => fn.startsWith(host) && fn.endsWith('.json'))[0];
