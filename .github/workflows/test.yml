@@ -31,7 +31,7 @@ jobs:
     - uses: actions/checkout@v3
     - uses: ./
       with:
-        host: 'example.com'
+        host: 'neverssl.com'
         grade: 'B'
     - uses: actions/upload-artifact@v3
       if: always()
